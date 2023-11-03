@@ -8,7 +8,7 @@ Library           SeleniumLibrary
 
 *** Variables ***
 ${SERVER}         localhost:7272
-${BROWSER}        Firefox
+${BROWSER}        Chrome
 ${DELAY}          0
 ${VALID USER}     demo
 ${VALID PASSWORD}    mode
@@ -39,7 +39,7 @@ Input Password
     Input Text    password_field    ${password}
 
 Submit Credentials
-    Click Button    login_button
+    Click Button    id=login_button
 
 Welcome Page Should Be Open
     Location Should Be    ${WELCOME URL}
